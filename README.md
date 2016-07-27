@@ -19,7 +19,7 @@ docker build --build-arg PBF=monaco-latest.osm.pbf -t nominatim-monaco .
 # Usage
 
 ```sh
-docker run -p 8080:80 nominatim-monaco
+docker run --rm -it -p 8080:80 nominatim-monaco
 
 docker-machine ip # => IP address if using docker-machine
 
